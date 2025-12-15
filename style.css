@@ -1,0 +1,157 @@
+/* Font */
+.rubik-<uniquifier> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(79, 70, 229, 0.7),
+        rgba(99, 102, 241, 0.7)
+    ),
+    url("https://via.placeholder.com/1600x900") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: white /* dark gray */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4f46e5; /* indigo */
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #4f46e5; /* primary brand color */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #4f46e5;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4338ca;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Headings */
+h2 {
+    letter-spacing: 1px;
+    color: #1f2937;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h4,
+.card-title {
+    color: #4f46e5;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #4b5563;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 32px rgba(79, 70, 229, 0.25);
+}
+
+/* Lists */
+.card ul li {
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+/* Achievements Dropdown */
+#achievements .dropdown-toggle {
+    background-color: #4f46e5;
+    border: none;
+}
+
+#achievements .dropdown-toggle:hover {
+    background-color: #4338ca;
+}
+
+/* Sections Background */
+section:nth-of-type(even) {
+    background-color: #f9fafb;
+}
+
+section:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    background: linear-gradient(90deg, #4f46e5, #6366f1);
+    color: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #e0e7ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Skills */
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
